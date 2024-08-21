@@ -117,14 +117,16 @@ const Section1 = () => {
               </div>
             </div>
           </motion.div>
-          <motion.div className="relative flex flex-col rounded-xl justify-center items-center bg-blue-950/20 backdrop-blur-md p-10 w-[40%] h-full"
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial="hidden"
-          animate={mainControls}
-          transition={{ duration: 0.5, delay: 0.8 }}>
+          <motion.div
+            className="relative flex flex-col rounded-xl justify-center items-center bg-blue-950/20 backdrop-blur-md p-10 w-[40%] h-full"
+            variants={{
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate={mainControls}
+            transition={{ duration: 0.5, delay: 0.8 }}
+          >
             <div className="bg-gradient-to-t from-black/40 to-black/0 w-full h-full absolute z-0"></div>
             <h2 className="pb-10 font-semibold z-10">
               Stay connected with us for the latest updates and exclusive
