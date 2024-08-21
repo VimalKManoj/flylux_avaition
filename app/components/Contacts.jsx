@@ -76,7 +76,7 @@ const Section1 = () => {
           >
             We are here to assist you with all your charter service needs and
             ensure you enjoy all the specialized benefits Fly Lux has to offer.
-            Please don't hesitate to reach out to us through the following
+            Please don&apos;t hesitate to reach out to us through the following
             channels.
           </motion.p>
         </div>
