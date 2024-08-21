@@ -74,7 +74,7 @@ const Section1 = () => {
             animate={mainControls}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            We're here to assist you with all your charter service needs and
+            We are here to assist you with all your charter service needs and
             ensure you enjoy all the specialized benefits Fly Lux has to offer.
             Please don't hesitate to reach out to us through the following
             channels.
