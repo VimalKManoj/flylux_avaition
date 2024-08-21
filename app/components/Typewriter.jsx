@@ -1,12 +1,18 @@
 "use client";
 import { delay, motion } from "framer-motion";
 
- const sentenceVariants = {
+const sentenceVariants = {
   hidden: {},
 
-  visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delay: 0.6, // Add your desired delay in seconds here
+    },
+  },
 };
- const letterVariants = {
+const letterVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { opacity: { duration: 0 } } },
 };

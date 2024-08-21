@@ -46,17 +46,17 @@ const AboutTextContainer = () => {
   );
 
   return (
-    <div className="sticky top-0 flex-1  w-1/2 h-screen flex justify-center items-center">
+    <div className="overflow-hidden sticky top-0 flex-1  w-1/2 h-screen flex justify-center items-center">
       <motion.div
         style={{ opacity }}
         className="w-[75%]  p-10 pr-12 text-white absolute h-screen flex justify-center flex-col items-center "
       >
         <h2
-          className={`md:text-5xl font-extrabold mb-4 ${myFont.className} w-full`}
+          className={`xl:text-4xl  2xl:text-5xl font-extrabold mb-4 ${myFont.className} w-full`}
         >
           Book Your Journey with Ease
         </h2>
-        <p className="text-lg ">
+        <p className="text-lg text-white/70">
           Booking with Flylux is streamlined and sophisticated. Engage with our
           expert concierge team for a personalized booking experience. We cater
           to your specific needs with flexibility and efficiency, ensuring a
@@ -69,11 +69,11 @@ const AboutTextContainer = () => {
         className="w-[75%] p-10 pr-12 text-white  absolute h-screen flex justify-center flex-col items-center "
       >
         <h2
-          className={`md:text-5xl font-extrabold mb-4 ${myFont.className} w-full`}
+          className={`xl:text-4xl  2xl:text-5xl font-extrabold mb-4 ${myFont.className} w-full`}
         >
           Flying with the Finest Crews
         </h2>
-        <p className="text-lg">
+        <p className="text-lg text-white/70">
           We collaborate with top-tier operators who employ highly qualified
           pilots and professional cabin crew. Our partners ensure that all
           personnel are rigorously trained to deliver outstanding service while
@@ -86,11 +86,11 @@ const AboutTextContainer = () => {
         className="w-[75%] p-10 pr-12 text-white  absolute h-screen flex justify-center flex-col items-center "
       >
         <h2
-          className={`md:text-5xl font-extrabold mb-4 ${myFont.className} w-full`}
+          className={`xl:text-4xl  2xl:text-5xl font-extrabold mb-4 ${myFont.className} w-full`}
         >
           From Global Cities to Remote Locales
         </h2>
-        <p className="text-lg">
+        <p className="text-lg text-white/70">
           Flylux delivers worldwide connectivity, granting access to prestigious
           international destinations and remote locales. Domestically, we offer
           comprehensive service throughout India, covering all major cities and
@@ -108,7 +108,7 @@ const AboutImage = () => {
         src="/images/booking.jpg"
         width={1000}
         height={1000}
-        className="w-[30rem] h-[35rem] object-cover relative left-56 rounded-lg "
+        className="w-[30rem] h-[35rem] object-cover relative lg:left-24 2xl:left-56 rounded-lg "
       />
       <Image
         src="/images/crew.jpg"
@@ -120,7 +120,7 @@ const AboutImage = () => {
         src="/images/sky.jpg"
         width={1000}
         height={1000}
-        className="w-[30rem] h-[30rem] object-cover relative left-56 mb-40 rounded-lg"
+        className="w-[30rem] h-[30rem] object-cover relative lg:left-24 2xl:left-56 mb-40 rounded-lg"
       />
     </div>
   );

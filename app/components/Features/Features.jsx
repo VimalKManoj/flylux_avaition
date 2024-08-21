@@ -60,7 +60,7 @@ export default function Features() {
           Features
         </motion.div>
         <motion.div
-          className={`${myFont.className} md:text-5xl font-extrabold mb-10 text-[#0A377A] `}
+          className={`${myFont.className} xl:text-4xl  2xl:text-5xl font-extrabold mb-10 text-[#0A377A] `}
           variants={{
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },

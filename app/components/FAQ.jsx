@@ -46,7 +46,7 @@ const FAQItem = ({ question, answer }) => {
         initial={{ height: 0 }}
         animate={{ height: isOpen ? "auto" : 0 }}
         transition={{ duration: 0.3 }}
-        className="overflow-hidden"
+        className="overflow-hidden text-black/75"
       >
         <p className="py-4">{answer}</p>
       </motion.div>
@@ -105,7 +105,7 @@ const FAQ = () => {
     <div className="w-screen min-h-screen py-16 flex justify-around p-10  ">
       <div ref={ref} className="flex-1 flex flex-col justify-between overflow-hidden">
         <h2
-          className={`text-5xl ${myFont.className} font-extrabold mb-8  mt-8`}
+          className={`xl:text-4xl  2xl:text-5xl ${myFont.className} font-extrabold mb-8  mt-8`}
         >
           Frequently Asked Questions
         </h2>
@@ -113,10 +113,11 @@ const FAQ = () => {
          variants={{
           hidden: {  y: 500 },
           visible: { y: 0 },
+          
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 1, delay: 0.3, ease : "easeInOut"}}>
+        transition={{ duration: 1, delay: 0.6, ease : "easeInOut"}}>
         <Image src="/images/plane.png" width={500} height={500} className="w-[80%]  self-start object-cover px-20" />
         </motion.div>
        

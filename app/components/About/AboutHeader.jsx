@@ -67,7 +67,7 @@ const AboutHeader = () => {
         initial="hidden"
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.35 }}
-        className={`${myFont.className} text-4xl md:text-5xl font-extrabold font-serif text-center text-[#0A377A] mt-2 w-1/3 mb-4`}
+        className={`${myFont.className} xl:text-4xl  2xl:text-5xl font-extrabold font-serif text-center text-[#0A377A] mt-2 w-1/3 mb-4`}
       >
         Your Journey, Our Expertise
       </motion.h2>
@@ -79,7 +79,7 @@ const AboutHeader = () => {
         initial="hidden"
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className={` ${font.className} text-2xl   text-center text-[#0A377A] mt-4 md:w-1/3`}
+        className={` ${font.className} xl:text-xl 2xl:text-2xl   text-center text-[#0A377A]/70 mt-4 md:w-1/3`}
       > 
         Flylux offers unparalleled access to a distinguished selection of jets
         and helicopters, ensuring an exceptional travel experience. Our service

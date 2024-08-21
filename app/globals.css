@@ -18,7 +18,11 @@ body{
   overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (max-width: 768px) {
+  body {
+    overflow: visible; 
+    width: 100vw;
+  }
 }
 
 @layer utilities {

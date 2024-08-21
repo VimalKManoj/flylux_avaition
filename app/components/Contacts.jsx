@@ -27,7 +27,7 @@ const Contacts = () => {
 const Section1 = () => {
   const ref = useRef(null);
 
-  const isInView = useInView(ref, { once: true, threshold: 0.5 });
+  const isInView = useInView(ref, { once: true, threshold: 0.9 });
 
   const mainControls = useAnimation();
 
@@ -48,12 +48,12 @@ const Section1 = () => {
         className="w-full h-full object-cover absolute object-top opacity-95 -z-10 "
       />
       <div
-        className="w-full h-full flex flex-col justify-between items-center flex-1  font-extrabold text-6xl "
+        className="w-full h-full flex flex-col justify-between items-center flex-1  font-extrabold text-6xl  "
         ref={ref}
       >
-        <div className="flex flex-col justify-center mb-20 px-48 ">
+        <div className="flex flex-col justify-end items-end xl:mb-12 2xl:mb-20 xl:px-32 2xl:px-48 w-[90%]  ">
           <motion.p
-            className={`${myFont.className} w-full text-end pt-20 text-[#0A377A] mb-6`}
+            className={`${myFont.className} w-full justify-end flex text-start  pt-20 text-[#0A377A] mb-6 xl:pr-16 2xl:pr-44`}
             variants={{
               hidden: { opacity: 0, y: 50 },
               visible: { opacity: 1, y: 0 },
@@ -65,7 +65,7 @@ const Section1 = () => {
             Contact Us
           </motion.p>
           <motion.p
-            className=" text-xl font-medium  w-[55%] self-end text-justify text-black"
+            className="w-[60%] justify-end items-end flex text-xl font-medium text-justify text-black"
             variants={{
               hidden: { opacity: 0, y: 50 },
               visible: { opacity: 1, y: 0 },
@@ -80,9 +80,9 @@ const Section1 = () => {
             channels.
           </motion.p>
         </div>
-        <div className="flex-1 flex w-full justify-around items-start h-full mb-40   text-xl px-28">
+        <div className="flex-1 flex w-full justify-around items-start h-full mb-40   text-xl xl:px-16 2xl:px-28">
           <motion.div
-            className="flex flex-col h-full rounded-xl justify-center items-center bg-blue-950/20 backdrop-blur-md p-10 w-[40%]"
+            className="flex flex-col h-full rounded-xl justify-around items-center bg-blue-950/20 backdrop-blur-md xl:p-6 2xl:p-10 xl:w-[45%] 2xl:w-[40%] overflow-hidden"
             variants={{
               hidden: { opacity: 0, y: 50 },
               visible: { opacity: 1, y: 0 },
@@ -118,7 +118,7 @@ const Section1 = () => {
             </div>
           </motion.div>
           <motion.div
-            className="relative flex flex-col rounded-xl justify-center items-center bg-blue-950/20 backdrop-blur-md p-10 w-[40%] h-full"
+            className="relative flex flex-col rounded-xl justify-around items-center bg-blue-950/20 backdrop-blur-md xl:p-6 2xl:p-10 xl:w-[45%] 2xl:w-[40%] h-full overflow-hidden"
             variants={{
               hidden: { opacity: 0, y: 50 },
               visible: { opacity: 1, y: 0 },

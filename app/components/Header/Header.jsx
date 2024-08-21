@@ -41,7 +41,7 @@ const Header = () => {
     ]
   );
 
-  const padding = useTransform(scrollY, [0, 100], [24, 12]);
+  const padding = useTransform(scrollY, [0, viewportHeight - 60 ,viewportHeight], [24, 24, 12]);
 
   return (
     <motion.div
@@ -57,10 +57,13 @@ const Header = () => {
           color,
         }}
       >
-        <Link href="/" className="">
+        <Link
+          href="/"
+          className="flex justify-center items-center w-full md:block"
+        >
           <DynamicLogo />
         </Link>
-        <div className="w-[40%] flex justify-between  items-center text-lg ">
+        <div className="hidden w-[40%] md:flex justify-between  items-center text-lg ">
           <Link href="#about">About Us</Link>
           <Link href="#features">Features</Link>
 
