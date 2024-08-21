@@ -39,12 +39,12 @@ const Section1 = () => {
 
   return (
     <div
-      className={`${font.className} relative text-4xl flex flex-col w-full h-full justify-around items-center rounded-3xl z-20 overflow-hidden bg-black`}
+      className={`${font.className} relative text-4xl flex flex-col w-full h-full justify-around items-center rounded-3xl z-20 overflow-hidden`}
     >
       <Image
         src="/images/contact_2.jpg"
-        width={1500}
-        height={1500}
+        width={1000}
+        height={1000}
         className="w-full h-full object-cover absolute object-top opacity-95 -z-10 "
       />
       <div
