@@ -2,6 +2,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Urbanist } from "next/font/google";
+import localFont from "next/font/local";
+const myFont = localFont({
+  src: "../../public/static/Conthrax Bold.otf",
+});
 
 
 const font = Urbanist({
@@ -86,7 +90,7 @@ const FAQ = () => {
 
   return (
     <div className="w-screen min-h-screen py-16 flex justify-around p-10  ">
-      <h2 className={`text-6xl ${font.className} font-extrabold mb-8 flex-1 mt-8`}>
+      <h2 className={`text-5xl ${myFont.className} font-extrabold mb-8 flex-1 mt-8`}>
         Your answers to popular questions
       </h2>
       <div className="min-h-full flex flex-1 justify-around flex-col  select-none">

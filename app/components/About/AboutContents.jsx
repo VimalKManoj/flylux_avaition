@@ -3,6 +3,10 @@ import Image from "next/image";
 import React from "react";
 import { motion, useTransform, useScroll } from "framer-motion";
 import { Urbanist } from "next/font/google";
+import localFont from "next/font/local";
+const myFont = localFont({
+  src: "../../../public/static/Conthrax Bold.otf",
+});
 
 const font = Urbanist({
   subsets: ["latin"],
@@ -48,7 +52,7 @@ const AboutTextContainer = () => {
         className="w-[75%]  p-10 pr-12 text-white absolute h-screen flex justify-center flex-col items-center "
       >
         <h2
-          className={`md:text-6xl font-extrabold mb-4 ${font.className} w-full`}
+          className={`md:text-5xl font-extrabold mb-4 ${myFont.className} w-full`}
         >
           Book Your Journey with Ease
         </h2>
@@ -65,7 +69,7 @@ const AboutTextContainer = () => {
         className="w-[75%] p-10 pr-12 text-white  absolute h-screen flex justify-center flex-col items-center "
       >
         <h2
-          className={`md:text-6xl font-extrabold mb-4 ${font.className} w-full`}
+          className={`md:text-5xl font-extrabold mb-4 ${myFont.className} w-full`}
         >
           Flying with the Finest Crews
         </h2>
@@ -82,7 +86,7 @@ const AboutTextContainer = () => {
         className="w-[75%] p-10 pr-12 text-white  absolute h-screen flex justify-center flex-col items-center "
       >
         <h2
-          className={`md:text-6xl font-extrabold mb-4 ${font.className} w-full`}
+          className={`md:text-5xl font-extrabold mb-4 ${myFont.className} w-full`}
         >
           From Global Cities to Remote Locales
         </h2>

@@ -9,6 +9,10 @@ import {
   useAnimation,
 } from "framer-motion";
 import { Urbanist } from "next/font/google";
+import localFont from "next/font/local";
+const myFont = localFont({
+  src: "../../../public/static/Conthrax Bold.otf",
+});
 
 const font = Urbanist({
   subsets: ["latin"],
@@ -63,7 +67,7 @@ const AboutHeader = () => {
         initial="hidden"
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.35 }}
-        className={`${font.className} text-4xl md:text-6xl font-extrabold font-serif text-center text-[#0A377A] mt-2 w-1/3 mb-4`}
+        className={`${myFont.className} text-4xl md:text-5xl font-extrabold font-serif text-center text-[#0A377A] mt-2 w-1/3 mb-4`}
       >
         Your Journey, Our Expertise
       </motion.h2>

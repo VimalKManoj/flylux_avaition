@@ -3,6 +3,10 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { Urbanist } from "next/font/google";
 import { motion, useInView, useAnimation } from "framer-motion";
+import localFont from "next/font/local";
+const myFont = localFont({
+  src: "../../../public/static/Conthrax Bold.otf",
+});
 
 const font = Urbanist({
   subsets: ["latin"],
@@ -41,7 +45,7 @@ export default function Features() {
     >
       <div
         ref={ref}
-        className="flex justify-center items-center max-w-[70vw] flex-col"
+        className="flex justify-center items-center max-w-[72vw] flex-col"
       >
         <motion.div
           className={`${font.className}  px-2 py-[2px] border rounded-xl text-[#0A377A]  border-[#0A377A] text-sm  mb-4`}
@@ -56,7 +60,7 @@ export default function Features() {
           Features
         </motion.div>
         <motion.div
-          className={`${font.className} md:text-6xl font-extrabold mb-10 text-[#0A377A] `}
+          className={`${myFont.className} md:text-5xl font-extrabold mb-10 text-[#0A377A] `}
           variants={{
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },

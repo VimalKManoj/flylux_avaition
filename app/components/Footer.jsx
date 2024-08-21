@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 import FAQ from "./FAQ";
 import Contacts from "./Contacts";
-
 import Lenis from "lenis";
 
 const Footer = () => {
@@ -18,7 +17,7 @@ const Footer = () => {
     requestAnimationFrame(raf);
   }, []);
   return (
-    <div className="bg-white z-10">
+    <div className="bg-white z-10 ">
       <FAQ />
       <div
         className="relative h-[100vh] "

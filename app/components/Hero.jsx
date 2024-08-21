@@ -5,6 +5,10 @@ import { motion } from "framer-motion";
 import Video from "./Video";
 import { Typewriter } from "./Typewriter";
 import { Urbanist } from "next/font/google";
+import localFont from "next/font/local";
+const myFont = localFont({
+  src: "../../public/static/Conthrax Regular.otf",
+});
 
 const font = Urbanist({
   subsets: ["latin"],
@@ -46,13 +50,13 @@ const Hero = () => {
         </motion.div>
       </div>
       <motion.p
-        className={`${font.className} absolute z-10 text-2xl  p-3 w-full bottom-16 md:leading-[110px] md:-tracking-[4px]  font-bold md:text-9xl text-white text-center select-none`}
+        className={`${myFont.className} absolute z-10 text-2xl  p-3 w-full bottom-16  font-bold md:text-7xl text-white text-center select-none `}
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 2, duration: 1 }}
       >
-        Your search for
-        <br /> luxury ends here.
+        Your Search For
+        <br /> Luxury Ends Here.
       </motion.p>
     </motion.div>
   );
