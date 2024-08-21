@@ -1,56 +1,77 @@
 "use client";
-import React, { useState } from "react";
-import { Inter } from "next/font/google";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { Urbanist } from "next/font/google";
+import { motion, useTransform, useScroll } from "framer-motion";
+import DynamicLogo from "./DynamicLogo";
 
-// const opacity = {
-//   initial: {
-//     opacity: 0,
-//   },
-//   open: {
-//     opacity: 1,
-//     transition: { duration: 0.35 },
-//   },
-//   closed: {
-//     opacity: 0,
-//     transition: { duration: 0.35 },
-//   },
-// };
-
-
-
-const inter = Inter({
+const font = Urbanist({
   subsets: ["latin"],
   display: "swap",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
 
 const Header = () => {
-  // const [isActive, setIsActive] = useState(false);
+  const { scrollY } = useScroll();
+  const [viewportHeight, setViewportHeight] = useState(0);
+
+  useEffect(() => {
+    setViewportHeight(window.innerHeight);
+  }, []);
+
+  const color = useTransform(
+    scrollY,
+    [
+      0,
+      viewportHeight * 0.93,
+      viewportHeight * 2.06,
+      viewportHeight * 2.2,
+      viewportHeight * 5.38,
+      viewportHeight * 5.39,
+    ],
+
+    [
+      "rgba(255 ,255 ,255 , 1)",
+      "rgba(255 ,255 ,255 , 1)",
+      "black",
+      "rgba(255 ,255 ,255 , 1)",
+      "rgba(255 ,255 ,255 , 1)",
+      "black",
+    ]
+  );
+
+  const padding = useTransform(scrollY, [0, 100], [24, 12]);
+
   return (
-    <div className="flex  flex-col items-center justify-between relative">
-      <div className="w-full my-4 p-4 px-8 fixed z-50 flex justify-between items-center ">
-        <div className="w-full hidden md:flex justify-between flex-1 text-white">
-          <Link href="/">
-            <Image
-              src="/svg/flylux_white.svg"
-              width={200}
-              height={200}
-              alt="LOGO"
-            />
-          </Link>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className={`${font.className} text-white w-full  fixed z-50 p-3 `}
+    >
+      <motion.div
+        className="w-full h-full p-6  rounded-2xl flex justify-between items-center  "
+        style={{
+          padding,
+          color,
+        }}
+      >
+        <Link href="/" className="">
+          <DynamicLogo />
+        </Link>
+        <div className="w-[40%] flex justify-between  items-center text-lg ">
           <Link href="#about">About Us</Link>
-          <Link href="/Features">Features</Link>
-          <Link href="/services">Services</Link>
+          <Link href="#features">Features</Link>
+
+          <Link href="#contact">
+            <p className="bg-white px-3 py-2 rounded-lg text-black shadow-md  text-lg">
+              Contact us
+            </p>
+          </Link>
         </div>
-        <div className="flex-1 flex justify-end">
-          <button className="bg-white px-3 py-2 text-[16px] rounded-lg text-[#4A5B77] shadow-md">
-            Contact Us
-          </button>
-        </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
