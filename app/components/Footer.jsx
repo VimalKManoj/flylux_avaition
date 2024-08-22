@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import FAQ from "./FAQ";
 import Contacts from "./Contacts";
 import Lenis from "lenis";
+import MobileContact from "./MobileContact";
 
 const Footer = () => {
   useEffect(() => {
@@ -26,6 +27,7 @@ const Footer = () => {
       >
         <div className="fixed bottom-0 h-[100vh] w-full" >
           <Contacts />
+          <MobileContact/>
         </div>
       </div>
     </div>

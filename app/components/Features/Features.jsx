@@ -40,12 +40,12 @@ export default function Features() {
 
   return (
     <div
-      className="w-full h-[90%] flex flex-col justify-center items-center py-32 bg-white z-10"
+      className="hidden w-full h-[90%] md:flex flex-col justify-center items-center py-32 bg-white z-10"
       id="features"
     >
       <div
         ref={ref}
-        className="flex justify-center items-center max-w-[72vw] flex-col"
+        className="flex justify-center items-center max-w-[73vw] flex-col"
       >
         <motion.div
           className={`${font.className}  px-2 py-[2px] border rounded-xl text-[#0A377A]  border-[#0A377A] text-sm  mb-4`}

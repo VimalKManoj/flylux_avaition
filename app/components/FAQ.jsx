@@ -28,13 +28,13 @@ const FAQItem = ({ question, answer }) => {
         className="cursor-pointer flex justify-between items-center py-4"
         onClick={toggleOpen}
       >
-        <h3 className="text-lg font-medium">{question}</h3>
+        <h3 className="md:text-lg font-medium pr-4">{question}</h3>
         <motion.div
           className="relative"
           animate={{ rotate: isOpen ? -180 : 0 }}
           transition={{ duration: 0.3 }}
         >
-          <div className="w-4 h-0.5 bg-black"></div>
+          <div className=" w-4 h-0.5 bg-black"></div>
           <div
             className={`w-4 h-0.5 bg-black absolute top-0 transition-transform ${
               isOpen ? "rotate-0" : "rotate-90"
@@ -102,10 +102,10 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="w-screen min-h-screen py-16 flex justify-around p-10  ">
+    <div className="w-screen min-h-screen py-16 flex flex-col md:flex-row justify-around p-6 md:p-10  ">
       <div ref={ref} className="flex-1 flex flex-col justify-between overflow-hidden">
         <h2
-          className={`xl:text-4xl  2xl:text-5xl ${myFont.className} font-extrabold mb-8  mt-8`}
+          className={`text-2xl xl:text-4xl  2xl:text-5xl ${myFont.className} font-extrabold md:mb-8 mb-4 mt-4 text-[#0A377A]  md:mt-8`}
         >
           Frequently Asked Questions
         </h2>
@@ -118,7 +118,7 @@ const FAQ = () => {
         initial="hidden"
         animate={mainControls}
         transition={{ duration: 1, delay: 0.6, ease : "easeInOut"}}>
-        <Image src="/images/plane.png" width={500} height={500} className="w-[80%]  self-start object-cover px-20" />
+        <Image src="/images/plane.png" width={500} height={500} className="hidden md:block w-[80%]  self-start object-cover px-20" />
         </motion.div>
        
       </div>

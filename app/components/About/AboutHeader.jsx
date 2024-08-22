@@ -17,9 +17,8 @@ const myFont = localFont({
 const font = Urbanist({
   subsets: ["latin"],
   display: "swap",
-  weight: [  "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
-
 
 const AboutHeader = () => {
   const ref = useRef(null);
@@ -43,7 +42,7 @@ const AboutHeader = () => {
   return (
     <div
       id="about"
-      className="flex flex-col items-center   bg-[#ffffff] px-6 z-20 pt-28 relative"
+      className="flex flex-col items-center  bg-[#ffffff] md:px-6 z-20 pt-20 lg:pt-28 relative h-screen md:h-auto"
     >
       <div className="w-1/3 flex justify-center">
         <motion.p
@@ -67,7 +66,7 @@ const AboutHeader = () => {
         initial="hidden"
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.35 }}
-        className={`${myFont.className} xl:text-4xl  2xl:text-5xl font-extrabold font-serif text-center text-[#0A377A] mt-2 w-1/3 mb-4`}
+        className={`${myFont.className} text-2xl xl:text-4xl  2xl:text-5xl font-extrabold font-serif text-center text-[#0A377A] mt-2 lg:w-1/3 md:mb-4`}
       >
         Your Journey, Our Expertise
       </motion.h2>
@@ -79,8 +78,8 @@ const AboutHeader = () => {
         initial="hidden"
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className={` ${font.className} xl:text-xl 2xl:text-2xl   text-center text-[#0A377A]/70 mt-4 md:w-1/3`}
-      > 
+        className={` ${font.className} w-screen p-4 md:p-0 xl:text-xl 2xl:text-2xl   text-center text-[#0A377A]/70 mt-4 md:w-1/3`}
+      >
         Flylux offers unparalleled access to a distinguished selection of jets
         and helicopters, ensuring an exceptional travel experience. Our service
         provides access to aircraft with luxurious interiors, cutting-edge
@@ -89,7 +88,7 @@ const AboutHeader = () => {
       </motion.p>
       <div
         ref={ref}
-        className="flex flex-col md:flex-row items-center justify-between mt-12 pb-20"
+        className=" px-4 md:px-0 grid grid-cols-2 grid-rows-2 gap-4 md:flex md:flex-row items-center justify-between mt-12 pb-20 "
       >
         <motion.div
           style={{ y: leftImageY }}
@@ -100,7 +99,8 @@ const AboutHeader = () => {
           initial="hidden"
           animate={mainControls}
           transition={{
-            duration: 0.3, delay:0.25,
+            duration: 0.3,
+            delay: 0.25,
             ease: [0, 0.71, 0.2, 1.01],
             scale: {
               type: "spring",
@@ -109,7 +109,7 @@ const AboutHeader = () => {
               restDelta: 0.001,
             },
           }}
-          className="absolute left-8 top-1/3 w-[20rem] h-[24rem]"
+          className="md:absolute md:left-8 top-1/3 lg:w-[20rem] lg:h-[24rem] h-48 w-36"
         >
           <Image
             src="/images/about_3.jpg"
@@ -128,7 +128,8 @@ const AboutHeader = () => {
           initial="hidden"
           animate={mainControls}
           transition={{
-            duration: 0.3,delay:0.45,
+            duration: 0.3,
+            delay: 0.45,
             ease: [0, 0.71, 0.2, 1.01],
             scale: {
               type: "spring",
@@ -137,14 +138,14 @@ const AboutHeader = () => {
               restDelta: 0.001,
             },
           }}
-          className="mr-28"
+          className="md:mr-28 h-48 w-36 md:w-96"
         >
           <Image
-            src="/images/background.jpg"
+            src="/images/sky.jpg"
             alt="Image description"
             width={400}
             height={400}
-            className="rounded-lg mt-10"
+            className="rounded-lg md:mt-10 w-full h-full object-cover object-center"
           />
         </motion.div>
         <motion.div
@@ -155,7 +156,7 @@ const AboutHeader = () => {
           initial="hidden"
           animate={mainControls}
           transition={{
-            duration: .4,
+            duration: 0.4,
             ease: [0, 0.71, 0.2, 1.01],
             scale: {
               type: "spring",
@@ -165,7 +166,7 @@ const AboutHeader = () => {
             },
           }}
           style={{ y: rightImageY }}
-          className="absolute right-8 top-40 w-[20rem] h-[24rem]"
+          className="md:absolute md:right-8 md:top-40  lg:w-[20rem] lg:h-[24rem] "
         >
           <Image
             src="/images/about.jpg"

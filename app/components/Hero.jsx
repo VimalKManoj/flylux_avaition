@@ -9,6 +9,9 @@ import localFont from "next/font/local";
 const myFont = localFont({
   src: "../../public/static/Conthrax Regular.otf",
 });
+const myFontBold = localFont({
+  src: "../../public/static/Conthrax Bold.otf",
+});
 
 const font = Urbanist({
   subsets: ["latin"],
@@ -54,7 +57,7 @@ const Hero = () => {
         </motion.div>
       </div>
       <motion.p
-        className={`${myFont.className} md:absolute z-10  p-3 w-full bottom-16  font-bold text-4xl md:text-7xl md:text-white text-center select-none `}
+        className={`${myFontBold.className} md:${myFont.className} md:absolute z-10  p-3 w-full bottom-16  font- text-5xl md:text-7xl md:text-white text-center select-none `}
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 2, duration: 1 }}
