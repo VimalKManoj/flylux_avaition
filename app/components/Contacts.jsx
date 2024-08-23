@@ -46,7 +46,7 @@ const Section1 = () => {
           src="/images/background.jpg"
           width={1000}
           height={1000}
-          className="w-full h-full md:h-auto object-cover absolute object-right  opacity-95 -z-10 "
+          className="w-full h-full xl:h-auto object-cover absolute object-right  opacity-95 -z-10 "
         />
       </div>
 
@@ -127,7 +127,7 @@ const Section1 = () => {
             transition={{ duration: 0.5, delay: 0.8 }}
           >
             {/* <div className="bg-gradient-to-t from-black/40 to-black/0 w-full h-full absolute z-0"></div> */}
-            <h2 className="xl:pb-4 2xl:pb-10 font-semibold z-10 xl:text-base 2xl:text-xl md:text-center">
+            <h2 className="xl:text-base 2xl:text-xl md:text-center xl:pb-4 2xl:pb-10 text-base font-semibold z-10">
               Stay connected with us for the latest updates and exclusive
               offers.
             </h2>
@@ -170,7 +170,7 @@ const Section1 = () => {
 const Section2 = () => {
   return (
     <div
-      className={`${myFont.className} flex absolute w-full h-[10vh] bottom-0 left-0 text-black rounded-t-3xl justify-between items-center p-10 z-20`}
+      className={`${myFont.className} hidden xl:flex absolute w-full h-[10vh] bottom-0 left-0 text-black rounded-t-3xl justify-between items-center p-10 z-20`}
     >
       <Link href="#hero" className={`${font.className}`}>
         Home

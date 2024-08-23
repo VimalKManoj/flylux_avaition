@@ -25,6 +25,15 @@ body{
   }
 }
 
+@media (min-width: 641px) and (max-width: 1280px) {
+  body {
+    overflow: visible; 
+    width: 100vw;
+  }
+}
+
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

@@ -145,7 +145,7 @@ const AboutHeader = () => {
             alt="Image description"
             width={400}
             height={400}
-            className="rounded-lg md:mt-10 w-full h-full object-cover object-center"
+            className="md:hidden xl:block rounded-lg md:mt-10 w-full h-full object-cover object-center"
           />
         </motion.div>
         <motion.div
@@ -173,7 +173,7 @@ const AboutHeader = () => {
             alt="Image description"
             width={500}
             height={600}
-            className="rounded-lg w-full h-full object-cover object-center"
+            className="hidden md:block rounded-lg w-full h-full object-cover object-center"
           />
         </motion.div>
       </div>

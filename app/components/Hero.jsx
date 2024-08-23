@@ -23,7 +23,7 @@ const font = Urbanist({
 const Hero = () => {
   return (
     <motion.div
-      className="h-screen flex justify-center items-center overflow-hidden sticky top-0  p-3 w-full z-0"
+      className="h-screen flex justify-center items-center overflow-hidden sticky top-0  p-3 w-full -z-20"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}

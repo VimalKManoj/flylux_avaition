@@ -115,7 +115,7 @@ export default function MobileFeature() {
               initial="hidden"
               animate={mainControls}
               transition={{ duration: 0.5, delay: 0.7 }}
-              className={`${font.className} w-full flex justify-start items-center p-4 border rounded-lg cursor-pointer hover:bg-[#0A377A] hover:text-white transition-colors duration-300`}
+              className={`${font.className} w-full flex justify-start items-center p-4 border rounded-lg cursor-pointer hover:bg-[#0A377A] hover:text-white transition-colors duration-300 select-none`}
               onMouseEnter={() =>
                 handleHover({
                   imageSrc: "/images/safety.jpg",
@@ -133,7 +133,7 @@ export default function MobileFeature() {
               initial="hidden"
               animate={mainControls}
               transition={{ duration: 0.5, delay: 0.7 }}
-              className={`${font.className} w-full flex justify-start items-center p-4 border rounded-lg cursor-pointer hover:bg-[#0A377A] hover:text-white transition-colors duration-300`}
+              className={`${font.className} w-full flex justify-start items-center p-4 border rounded-lg cursor-pointer hover:bg-[#0A377A] hover:text-white transition-colors duration-300 select-none`}
               onMouseEnter={() =>
                 handleHover({
                   imageSrc: "/images/pet_friendly.jpg",
@@ -151,7 +151,7 @@ export default function MobileFeature() {
               initial="hidden"
               animate={mainControls}
               transition={{ duration: 0.5, delay: 0.7 }}
-              className={`${font.className} w-full flex justify-start items-center p-4 border rounded-lg cursor-pointer hover:bg-[#0A377A] hover:text-white transition-colors duration-300`}
+              className={`${font.className} w-full flex justify-start items-center p-4 border rounded-lg cursor-pointer hover:bg-[#0A377A] hover:text-white transition-colors duration-300 select-none`}
               onMouseEnter={() =>
                 handleHover({
                   imageSrc: "/images/business.jpg",
@@ -169,7 +169,7 @@ export default function MobileFeature() {
               initial="hidden"
               animate={mainControls}
               transition={{ duration: 0.5, delay: 0.7 }}
-              className={`${font.className} w-full flex justify-start items-center p-4 border rounded-lg cursor-pointer hover:bg-[#0A377A] hover:text-white transition-colors duration-300`}
+              className={`${font.className} w-full flex justify-start items-center p-4 border rounded-lg cursor-pointer hover:bg-[#0A377A] hover:text-white transition-colors duration-300 select-none`}
               onMouseEnter={() =>
                 handleHover({
                   imageSrc: "/images/dining.jpg",
