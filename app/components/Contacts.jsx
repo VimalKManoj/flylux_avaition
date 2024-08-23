@@ -101,7 +101,9 @@ const Section1 = () => {
                   height={40}
                   className="pr-2 w-6 h-6 2xl:w-8 2xl:h-8 xl:w-7 xl:h-7 "
                 />
-                <a href="mailto:someone@example.com">sales@flyluxaviation.in</a>
+                <a href="mailto:sales@flyluxaviation.in">
+                  sales@flyluxaviation.in
+                </a>
               </div>
               <div className="flex justify-center items-center text-base xl:text-base 2xl:text-xl font-normal">
                 <Image
@@ -110,7 +112,7 @@ const Section1 = () => {
                   height={40}
                   className="pr-2 w-6 h-6 2xl:w-8 2xl:h-8 xl:w-7 xl:h-7 "
                 />
-                <h2>+91 8123578889</h2>
+                <a href="tel:+91 8123578889">+91 8123578889</a>
               </div>
             </div>
           </motion.div>

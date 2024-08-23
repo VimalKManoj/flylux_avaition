@@ -1,9 +1,9 @@
 import React from "react";
 
-const Video = ({ src }) => {
+const Video = ({ src ,src2 ,className}) => {
   return (
     <video
-      className="w-full h-full object-cover rounded-3xl"
+      className={`${className} w-full h-full object-cover rounded-3xl`}
       width="1500"
       height="1500"
       preload="auto"
@@ -11,7 +11,7 @@ const Video = ({ src }) => {
       muted
     >
       <source src={src} type="video/mp4" />
-      <source src="/Flylux_Banner_3.webm" type="video/webm" />
+      <source src={src2} type="video/webm" />
     </video>
   );
 };

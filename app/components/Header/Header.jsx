@@ -48,7 +48,7 @@ const Header = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className={`${font.className} text-white w-full  fixed z-50 p-3 `}
+      className={`${font.className} hidden md:block text-white w-full  fixed z-50 p-3 `}
     >
       <motion.div
         className="w-full h-full p-6  rounded-2xl flex justify-between items-center  "
