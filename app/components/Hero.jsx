@@ -29,11 +29,11 @@ const Hero = () => {
       transition={{ duration: 1 }}
     >
       <Link
-          href="/"
-          className="absolute top-0 flex justify-center items-center w-full md:hidden h-[13%]"
-        >
-          <Image src="/svg/flylux_white.svg" width={180} height={80}/>
-        </Link>
+        href="/"
+        className="absolute top-0 flex justify-center items-center w-full md:hidden h-[13%]"
+      >
+        <Image src="/svg/flylux_white.svg" width={180} height={80} />
+      </Link>
       <Suspense
         fallback={
           <div className="w-full h-full object-cover rounded-3xl">
@@ -41,9 +41,18 @@ const Hero = () => {
           </div>
         }
       >
-        <Video src="/Flylux_Banner_3.mp4" src2="/Flylux_Banner_3.webm" className="hidden md:block"/>
-        <Video src="/Flylux_Banner_vertical.mp4" src2="/Flylux_Banner_vertical.webm" className="md:hidden" />
+        <Video
+          src="/Flylux_Banner_3.mp4"
+          src2="/Flylux_Banner_3.webm"
+          className="hidden md:block"
+        />
       </Suspense>
+      <Image
+        src="/images/Vertical.jpg"
+        className=" md:hidden w-full h-full object-cover rounded-3xl object-right"
+        width={1000}
+        height={1000}
+      />
 
       <div className="absolute w-full  flex justify-center top-0 bottom-0 items-center overflow-hidden">
         <motion.div className="hidden md:absolute xl:bottom-48 2xl:bottom-56  md:w-[35rem] md:flex justify-start items-center bg-white/50 py-3 px-4 rounded-[40px]">
@@ -65,7 +74,7 @@ const Hero = () => {
         </motion.div>
       </div>
       <motion.p
-        className={`${myFontBold.className} md:${myFont.className} absolute bottom-16 text-center  text-3xl z-10  p-3 w-full xl:bottom-8 2xl:bottom-16  md:text-7xl text-white md:text-center select-none `}
+        className={`${myFontBold.className} md:${myFont.className} absolute bottom-16 text-center  text-3xl z-10  p-4 w-full xl:bottom-8 2xl:bottom-16  md:text-7xl text-white md:text-center select-none `}
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 2, duration: 1 }}
